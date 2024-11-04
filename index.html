@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/brebes.png" type="image/x-icon">
+    <title>Wisata Brebes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header dengan navigasi -->
+    <header>
+        <h1>Wisata Brebes</h1>
+        <nav>
+            <a href="#paket-wisata">Paket Wisata</a>
+            <a href="#pemesanan">Pemesanan</a>
+        </nav>
+    </header>
+
+    <!-- Bagian Halaman Beranda - Menampilkan Paket Wisata -->
+    <section id="paket-wisata">
+        <h2>Paket Wisata</h2>
+        <div class="paket">
+            <img src="img/waduk malahayu.jfif" alt="Paket Wisata 1">
+            <div>
+                <h3>Paket Wisata Air</h3>
+                <p>Waduk Malahayu adalah destinasi wisata yang pas untuk kamu yang ingin menikmati perpaduan antara sejarah dan alam. Dari segi pemandangan, suasananya sangat menenangkan dan cocok untuk melepaskan diri sejenak dari hiruk pikuk kehidupan perkotaan. Ditambah lagi, ada banyak aktivitas seru yang bisa kamu lakukan, mulai dari berperahu, memancing, hingga trekking</p>
+                <a href="https://youtu.be/4-G0o7oLWh0?si=MQqufEHDxC9FMTHK" target="_blank">Video Promosi</a>
+            </div>
+        </div>
+        <h2>Paket Wisata</h2>
+        <div class="paket">
+            <img src="img/Pasir gibug.jfif" alt="Paket Wisata 2">
+            <div>
+                <h3>Paket Wisata Pegunungan</h3>
+                <p>Wisata Pasir Gibug merupakan salah satu taman rekreasi yang ada di Brebes. Taman rekreasi ini memiliki berbagai wahana permainan dan juga pemandangan yang menyenangkan. Hal tersebut membuat tempat wisata ini cocok untuk tempat mengisi waktu saat liburan.</p>
+                <a href="https://youtu.be/pMcxipk_ekI?si=g7LfCcqmM2D-xeBE" target="_blank">Video Promosi</a>
+            </div>
+        </div>
+        <h2>Paket Wisata</h2>
+        <div class="paket">
+            <img src="img/Pantai randu sanga.jfif" alt="Paket Wisata 3">
+            <div>
+                <h3>Paket Wisata Pantai</h3>
+                <p>Pantai Randusanga Kulon adalah destinasi wisata pantai yang memukau yang terletak di Desa Randusanga Kulon, Kabupaten Brebes, Jawa Tengah. Pantai yang indah ini berjarak sekitar 7 kilometer dari pusat kota Brebes dan mengundang pengunjung dengan pesonanya yang murni dan suasananya yang tenang.</p>
+                <a href="https://youtu.be/hx7Mf37P95U?si=sd89aLkLHc5hiZpG" target="_blank">Video Promosi</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Pemesanan -->
+    <section id="pemesanan">
+        <h2>Pemesanan Paket Wisata</h2>
+        <form id="formPemesanan">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="paket">Pilih Paket Wisata:</label>
+            <select id="paket" required>
+                <option value="pantai">Pantai</option>
+                <option value="pegunungan">Pegunungan</option>
+            </select>
+            
+            <button type="button" onclick="tambahPesanan()">Pesan</button>
+        </form>
+
+        <h3>Daftar Pesanan</h3>
+        <ul id="daftarPesanan"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
